@@ -1,0 +1,23 @@
+Решение на SVG (Scale Vector Graphics):
+Протестировано только в Chrome
+
+Код :
+
+<html>
+<head> 
+<title>Перемещение круга</title>
+<svg width ="1000" height ="1000" viewBox="0 0 200 200">> //задание области просмотра
+  <script> 
+    function circle_click(event) { //функция перемещения круга
+      var circle = event.target;  
+		circle.setAttribute("cx",Math.random()*100) //изменение координаты x
+		circle.setAttribute("cy",Math.random()*100) //изменение координаты y
+	}
+  </script>
+  <circle onmouseover="circle_click(event)" cx="30" cy="30" r="20" //рисование круга
+          fill="yellow"/>
+</svg>
+</head>
+<body>
+</body>
+</html>
