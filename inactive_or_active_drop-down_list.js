@@ -1,9 +1,9 @@
 
 var setTypeEnable = function(){
-   if(getFieldValueByName('step_role')['value'] == getFieldValueByName('group_role')['value']){
-   	setEnabledByName('def_type',true);      
+   if(getFieldValue('step_role')['value'] == getFieldValue('group_role')['value']){
+   	setEnabled('def_type',true);      
    }else{
-   	setEnabledByName('def_type',false); 
+   	setEnabled('def_type',false); 
    };	
    
 };
